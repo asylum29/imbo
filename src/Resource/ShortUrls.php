@@ -135,7 +135,7 @@ class ShortUrls implements ResourceInterface {
      *
      * @return string
      */
-    private function getShortUrlId($len = 7) {
+    private function getShortUrlId($len = 50) {
         $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
         $charsLen = 62;
         $key = '';
