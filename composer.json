@@ -1,5 +1,5 @@
 {
-  "name": "imbo/imbo",
+  "name": "asylum29/imbo",
   "type": "project",
   "description": "RESTful image server that handles image storage/transformations and metadata",
   "keywords": [ "image storage", "image transformation", "image metadata" ],
