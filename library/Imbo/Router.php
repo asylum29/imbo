@@ -43,7 +43,7 @@ class Router {
      */
     private $routes = [
         'image'          => '#^/users/(?<user>[a-z0-9_-]{1,})/images/(?<imageIdentifier>[A-Za-z0-9_-]{1,255})(\.(?<extension>gif|jpg|png))?$#',
-        'globalshorturl' => '#^/s/(?<shortUrlId>[a-zA-Z0-9]{50})$#',
+        'globalshorturl' => '#^/s/(?<shortUrlId>[a-zA-Z0-9]{7,50})$#',
         'status'         => '#^/status(/|(\.(?<extension>json|xml)))?$#',
         'images'         => '#^/users/(?<user>[a-z0-9_-]{1,})/images(/|(\.(?<extension>json|xml)))?$#',
         'globalimages'   => '#^/images(/|(\.(?<extension>json|xml)))?$#',
@@ -52,7 +52,7 @@ class Router {
         'stats'          => '#^/stats(/|(\.(?<extension>json|xml)))?$#',
         'index'          => '#^/?$#',
         'shorturls'      => '#^/users/(?<user>[a-z0-9_-]{1,})/images/(?<imageIdentifier>[A-Za-z0-9_-]{1,255})/shorturls(/|\.(?<extension>json|xml))?$#',
-        'shorturl'       => '#^/users/(?<user>[a-z0-9_-]{1,})/images/(?<imageIdentifier>[A-Za-z0-9_-]{1,255})/shorturls/(?<shortUrlId>[a-zA-Z0-9]{50})$#',
+        'shorturl'       => '#^/users/(?<user>[a-z0-9_-]{1,})/images/(?<imageIdentifier>[A-Za-z0-9_-]{1,255})/shorturls/(?<shortUrlId>[a-zA-Z0-9]{7,50})$#',
         'groups'         => '#^/groups(/|(\.(?<extension>json|xml)))?$#',
         'group'          => '#^/groups/(?<group>[a-z0-9_-]{1,})(/|\.(?<extension>json|xml))?$#',
         'keys'           => '#^/keys/(?<publickey>[a-z0-9_-]{1,})$#',
